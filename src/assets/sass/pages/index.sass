@@ -1,0 +1,112 @@
+@import '../_includes'
+
+// Hero
+
+.container
+  width: 100%
+  max-width: 1128px
+  margin: 0 auto
+  @include breakpoint(desktop)
+    padding: 0px 32px
+
+.hero
+  padding-top: 32px
+
+.logo
+  height: 32px
+  img
+    height: 100%
+  @include breakpoint(tablet)
+    img
+      margin: 0 auto
+
+.hero_content_container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin: 64px 0px
+  @include breakpoint(tablet)
+    flex-direction: column
+
+.hero_text_container
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 360px
+  h2
+    margin-bottom: 24px
+  p
+    margin-bottom: 32px
+  button
+    width: 100%
+    max-width: 264px
+  @include breakpoint(tablet)
+    margin: 0 auto
+    align-items: center
+    h2, p, button
+      text-align: center
+
+
+.hero_img_container
+  width: 100%
+  max-width: 576px
+  img
+    width: 100%
+    display: block
+  @include breakpoint(tablet)
+    margin: 0 auto
+    margin-top: 40px
+
+// Features
+
+.features
+  background-color: $blue
+  padding: 80px 0px
+
+.features_content_container
+  display: flex
+  align-items: baseline
+  @include breakpoint(mobile)
+    flex-direction: column
+    align-items: center
+
+.feature_container
+  width: 100%
+  max-width: 360px
+  h4, p
+    text-align: center
+    color: #fff
+    margin-top: 16px
+  p
+    max-width: 320px
+    margin: 16px auto 0px auto
+  @include breakpoint(mobile)
+    margin-bottom: 64px
+    &:last-child
+      margin-bottom: 0px
+
+// Sign Up
+
+.sign_up
+  padding: 80px 0px
+  text-align: center
+  h2
+    margin-bottom: 40px
+  img
+    width: 100%
+    max-width: 792px
+    margin: 0 auto
+    margin-bottom: 48px
+  button
+    width: 100%
+    max-width: 264px
+
+// Footer
+
+footer
+  background-color: $grey-light
+  padding: 32px 0px
+  img
+    height: 24px
+    margin: 0 auto
+
