@@ -26,6 +26,7 @@ jobs:
     - run: pwd
     - run: ls -a
     - run: yarn build
+    - run: git status
     - name: Simple commit
       # You may pin to the exact commit or the version.
       # uses: zwaldowski/git-commit-action@66730766679672410dc04830ae6389f4376c8c94
