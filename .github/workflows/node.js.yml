@@ -3,7 +3,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
   pull_request:
     branches: [ master ]
 
@@ -22,7 +22,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: git checkout -b pages
+    - run: git checkout master
     - run: yarn install
     - run: pwd
     - run: ls -a
