@@ -35,5 +35,5 @@ jobs:
       # uses: zwaldowski/git-commit-action@66730766679672410dc04830ae6389f4376c8c94
       uses: zwaldowski/git-commit-action@v1
     - run: git status
-    - run: git push -u origin pages --force
+    - run: git push -u origin master --force
 
